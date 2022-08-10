@@ -7,7 +7,7 @@
 
 /* color de fondo */
 body {
-    background-color: pink;
+    background-image: linear-gradient(to top, rgb(249, 216, 223), rgb(224, 153, 165));
 }
 
 
@@ -28,11 +28,11 @@ h3 {
 }
 
 .tituloHeader {
-    background-color: rgb(212, 164, 171);
+    background-image: linear-gradient(to top, rgb(249, 216, 223), rgb(224, 153, 165));
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: rgb(48, 6, 48);
+    color: rgb(69, 10, 69);
     padding: 15px;
     width: 100%;
 }
@@ -444,19 +444,28 @@ footer h2 {
 
 @media screen and (min-width:992px) {
 
-    /* ESTILOS HEADER */
-    .header{
-        position: sticky;
-        top: 0;
-        }
+    /*ESTILOS HEADER*/
+/*ANIMACION*/
+ul li:hover{
+    background-color: pink;
+    transform: scale(0.9);
+    box-shadow: 1px 1px 5px violet;
+}
 
-    .tituloHeader {
-        font-size: 60px;
+.header{
+    position: sticky;
+    top: 0;
     }
 
-    .menuNav {
-        display: block;
-    }
+.tituloHeader {
+    font-size: 60px;
+    
+}
+
+.menuNav {
+    display: block;
+    
+}
 
     nav ul {
         flex-direction: row;
