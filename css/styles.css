@@ -7,9 +7,8 @@
 
 /* color de fondo */
 body {
-    background-color: pink;
+    background-image: linear-gradient(to top, rgb(249, 216, 223), rgb(224, 153, 165));
 }
-
 
 h2,
 h3 {
@@ -24,15 +23,15 @@ h3 {
 .containerHeader {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .tituloHeader {
-    background-color: rgb(212, 164, 171);
+    background-image: linear-gradient(to top, rgb(249, 216, 223), rgb(224, 153, 165));
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: rgb(48, 6, 48);
+    color: rgb(69, 10, 69);
     padding: 15px;
     width: 100%;
 }
@@ -79,14 +78,14 @@ nav ul li a {
 .contenedorMain {
     width: 90%;
     margin: 0 auto;
-    
+
 }
 
 .contenidoMain {
     display: flex;
     flex-direction: column;
-   
-    
+
+
 
 }
 
@@ -124,13 +123,13 @@ nav ul li a {
 
 
 /* PAGINA PILATES */
-.mainPilates{
+.mainPilates {
     font-size: 1.3rem;
     border: solid 1px black;
     margin: 3rem 0 2rem 0;
 }
 
-.contenedorPilates{
+.contenedorPilates {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -139,32 +138,32 @@ nav ul li a {
 }
 
 
-.imgPilates{ 
+.imgPilates {
     margin-bottom: 30px;
     height: 450px;
- }
+}
 
- .textoPilates{
+.textoPilates {
     text-align: center;
- }
+}
 
- .pregunta h4{
+.pregunta h4 {
     font-size: 19px;
     font-weight: bold;
     margin: 25px 0 5px 0;
     text-transform: uppercase;
     background-color: rgba(164, 170, 219, 0.866);
     padding: 10px;
- }
+}
 
- .pregunta p{
+.pregunta p {
     font-size: 18px;
 
     line-height: 1.2;
- }
+}
 
 
-.videoPilates iframe{
+.videoPilates iframe {
     width: 100%;
     height: 350px;
 }
@@ -214,10 +213,10 @@ main .imgPilates {
     margin-bottom: 50px;
 }
 
-.imgElongacion{
+.imgElongacion {
     width: 60%;
     margin: 0 auto;
-    }
+}
 
 
 .textoElongacion {
@@ -229,10 +228,11 @@ main .imgPilates {
 
 /*ESTILOS DE YOGA */
 
-.mainYoga{
+.mainYoga {
     width: 80%;
     margin: 0 auto;
 }
+
 .tituloYoga {
     font-size: 50px;
     border: solid 1px black;
@@ -240,7 +240,7 @@ main .imgPilates {
     margin-bottom: 50px;
 }
 
-.pYoga{
+.pYoga {
     font-size: 20px;
 }
 
@@ -271,7 +271,7 @@ main .imgPilates {
 img {
     width: 80%;
     margin: 0 auto;
-    
+
 }
 
 .clases {
@@ -293,12 +293,12 @@ img {
     margin: 0 auto;
     gap: 3.5rem;
     border: 2px solid black;
-    
 
-    
+
+
 }
 
-.sectionClases{
+.sectionClases {
     margin: 1.3rem;
 }
 
@@ -425,11 +425,11 @@ footer h2 {
     /*CLASES */
 
     /* estilo section*/
-    
-    .contenedorMain .mainClases h2{
+
+    .contenedorMain .mainClases h2 {
         font-size: 2.1rem;
     }
-   
+
     .sectionClases p {
         font-size: 1.7rem;
         margin-bottom: 5rem;
@@ -445,17 +445,26 @@ footer h2 {
 @media screen and (min-width:992px) {
 
     /* ESTILOS HEADER */
-    .header{
+    /*ANIMACION*/
+    ul li:hover {
+        background-color: pink;
+        transform: scale(0.9);
+        box-shadow: 1px 1px 5px violet;
+    }
+
+    .header {
         position: sticky;
         top: 0;
-        }
+    }
 
     .tituloHeader {
         font-size: 60px;
+
     }
 
     .menuNav {
         display: block;
+
     }
 
     nav ul {
@@ -473,52 +482,53 @@ footer h2 {
     /*PAGINA INDEX*/
     .textoMain p {
         font-size: 28px;
-        
+
     }
 
     .contenidoMain div h3 {
         font-size: 30px;
     }
 
-   
-    .contenedorInfo{
+
+    .contenedorInfo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-row-gap: 15px;
         margin-top: 50px;
         text-align: center;
-        
+
     }
 
-    .introduccionImg2{
+    .introduccionImg2 {
         grid-area: 2 / 2 / 2 / 2;
     }
 
-    .introduccionTexto{
+    .introduccionTexto {
         display: flex;
         align-items: center;
 
     }
 
-    .imgInfo{
+    .imgInfo {
         width: 80%;
     }
 
 
 
-    .introduccionTexto{
+    .introduccionTexto {
         font-size: 25px;
     }
+
     /* PAGINA PILATES */
 
-    .imgPilates{
+    .imgPilates {
         width: 70%;
         height: 800px;
         margin: 0 auto;
     }
 
-    .textoPilates{
+    .textoPilates {
         width: 70%;
         margin: 0 auto;
         display: grid;
@@ -526,18 +536,18 @@ footer h2 {
         grid-column-gap: 40px;
     }
 
-    .pregunta{
+    .pregunta {
         border: 2px dotted blue;
         margin: 15px;
     }
 
-    .pregunta h4{
-        margin:0px;
-   
-        padding: 10px;
-     }
+    .pregunta h4 {
+        margin: 0px;
 
-     .videoPilates iframe{
+        padding: 10px;
+    }
+
+    .videoPilates iframe {
         width: 70%;
         height: 600px;
         margin: 0 auto;
@@ -548,22 +558,18 @@ footer h2 {
 
     footer h2 {
         font-size: 1.2rem;
-     }
+    }
 
-     /*CLASES */
+    /*CLASES */
 
     /* estilo section*/
-    
-    .contenedorMain .mainClases h2{
+
+    .contenedorMain .mainClases h2 {
         font-size: 2.8rem;
     }
-   
+
     .sectionClases p {
         font-size: 2rem;
         margin-bottom: 5rem;
     }
 }
-
-
-
-
